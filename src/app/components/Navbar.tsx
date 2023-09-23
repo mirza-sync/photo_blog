@@ -1,19 +1,40 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [navBgColor, setNavBgColor] = useState("transparent");
+  const [navTextColor, setNavTextColor] = useState("#fff");
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  useEffect(() => {
+    const changeNavColorOnScroll = () => {
+      if (window.scrollY >= 90) {
+        setNavBgColor("#fff");
+        setNavTextColor("#000");
+      } else {
+        setNavBgColor("transparent");
+        setNavTextColor("#fff");
+      }
+    };
+    window.addEventListener("scroll", changeNavColorOnScroll);
+  }, []);
+
   return (
-    <div className="fixed left-0 top-0 z-10 w-full duration-300 ease-in">
-      <div className="m-auto flex max-w-[1240px] items-center justify-between p-4 text-white">
+    <div
+      style={{ backgroundColor: navBgColor }}
+      className="fixed left-0 top-0 z-10 w-full duration-300 ease-in"
+    >
+      <div
+        style={{ color: navTextColor }}
+        className="m-auto flex max-w-[1240px] items-center justify-between p-4 text-white"
+      >
         <Link href="/">
           <h1 className="text-4xl font-bold">Captur</h1>
         </Link>
