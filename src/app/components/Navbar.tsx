@@ -31,14 +31,13 @@ function Navbar() {
       style={{ backgroundColor: navBgColor }}
       className="fixed left-0 top-0 z-10 w-full duration-300 ease-in"
     >
-      <div
-        style={{ color: navTextColor }}
-        className="m-auto flex max-w-[1240px] items-center justify-between p-4 text-white"
-      >
+      <div className="m-auto flex max-w-[1240px] items-center justify-between p-4 text-white">
         <Link href="/">
-          <h1 className="text-4xl font-bold">Captur</h1>
+          <h1 style={{ color: navTextColor }} className="text-4xl font-bold">
+            Captur
+          </h1>
         </Link>
-        <ul className="hidden sm:flex">
+        <ul style={{ color: navTextColor }} className="hidden sm:flex">
           <li className="p-4">
             <Link href="/">Home</Link>
           </li>
@@ -58,7 +57,7 @@ function Navbar() {
           {isNavOpen ? (
             <AiOutlineClose size={20} />
           ) : (
-            <AiOutlineMenu size={20} />
+            <AiOutlineMenu style={{ color: navTextColor }} size={20} />
           )}
         </div>
 
