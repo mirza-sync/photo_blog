@@ -14,8 +14,8 @@ const InstagramImg = ({ socialImg }: InstagramImgProps) => {
         className="h-full w-full"
         // layout="responsive"
       />
-      <div className="absolute bottom-0 left-0 right-0 top-0 hover:bg-black/50">
-        <span className="block">
+      <div className="group absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center hover:bg-black/50">
+        <span className="hidden group-hover:block">
           <FaInstagram size={30} />
         </span>
       </div>
