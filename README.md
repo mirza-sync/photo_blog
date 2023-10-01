@@ -18,4 +18,6 @@ A beautiful website to showcase photos. Practicing Next.js and brushing up my cs
 
 2. Theo is my idol, and he talked about [tailwind tips](https://www.youtube.com/watch?v=QBajvZaWLXs). One of the thing that interest me is [automatic class sorting with Prettier](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier). Wish I never forget this tips everytime I uses tailwind in my projects.
 
-3. To create a new page in Next.js 13, you need to make sure the file named `page.tsx`? That's kinda lame. I prefer `index.tsx`.
+3. To create a new page in v13, you need to make sure the file named `page.tsx`? That's kinda lame. I prefer `index.tsx`.
+
+4. When working on the `Work` page, I realized that my images size doesn't look the same as in the tutorial. Looks like v12 and v13 have different props for the `<Image />` component. Hence, I watched [this video](https://www.youtube.com/watch?v=gpJKj45AikY) to understand more about v13's image component. The vidoe talks about image optimization stuff such as aspect ratio, generated srcset for different viewports and file size. Today I learnt that the `width` and `height` props is not the actual image's width and height that will be rendered, but it is to infer aspect ratio of the image to prevent **layout shift**. I don't even know layout shift was a thing and it was cool that Nextjs able to optimize this issue. But in the end I think this will lead to premature optimization since it doesn't really matters. I'll just stick to `w-full`, `h-auto` and `object-cover`.
