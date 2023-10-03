@@ -7,6 +7,7 @@ A beautiful website to showcase photos. Practicing Next.js and brushing up my cs
 - Reference: [Build A Responsive Next JS Website Using Tailwind CSS - Beginner Guide](https://www.youtube.com/watch?v=HVyct9EUNP8)
 - Image credits: [Unsplash](https://unsplash.com/)
 - Created with Next.js 13, Typescript & Tailwind
+- Status: Finished
 
 ---
 
