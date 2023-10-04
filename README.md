@@ -9,9 +9,18 @@ A beautiful website to showcase photos. Practicing Next.js and brushing up my cs
 - Created with Next.js 13, Typescript & Tailwind
 - Status: Finished
 
+### My Review
+
 ---
 
+This tutorial is awesome.
+
 ### Some diary/notes
+
+---
+
+<details>
+<summary>Click to expand</summary>
 
 > I'll update this if I'm feeling the need to... so that I can tell my grandchildren that I wrote this and learn, rather than just blindly follow a tutorial.
 
@@ -22,3 +31,4 @@ A beautiful website to showcase photos. Practicing Next.js and brushing up my cs
 3. To create a new page in v13, you need to make sure the file named `page.tsx`? That's kinda lame. I prefer `index.tsx`.
 
 4. When working on the `Work` page, I realized that my images size doesn't look the same as in the tutorial. Looks like v12 and v13 have different props for the `<Image />` component. Hence, I watched [this video](https://www.youtube.com/watch?v=gpJKj45AikY) to understand more about v13's image component. The vidoe talks about image optimization stuff such as aspect ratio, generated srcset for different viewports and file size. Today I learnt that the `width` and `height` props is not the actual image's width and height that will be rendered, but it is to infer aspect ratio of the image to prevent **layout shift**. I don't even know layout shift was a thing and it was cool that Nextjs able to optimize this issue. But in the end I think this will lead to premature optimization since it doesn't really matters. I'll just stick to `w-full`, `h-auto` and `object-cover`.
+</details>
